@@ -5,11 +5,11 @@ const nextConfig = {
     webpack5: true,
 },
 images: {
-    loader: 'akamai',
+    loader: 'akamai3',
     path: '',
   domains: ['res.cloudinary.com','openseauserdata.com','lh3.googleusercontent.com']
 },
-trailingSlash: true,
+trailingSlash: false,
 webpack: (config, {}) => {
     config.resolve.fallback = {
         ...config.resolve.fallback,
